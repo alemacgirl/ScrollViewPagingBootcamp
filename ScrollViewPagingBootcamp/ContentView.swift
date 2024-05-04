@@ -59,7 +59,7 @@ struct ContentView: View {
             if #available(iOS 17.0, *) {
                 TransparentBlurView(removeAllFilters: false)
                     //.blur(radius: 3)
-                    .frame(width: 340, height: 50)
+                    .frame(width: 400, height: 50)
                     .border(Color.red)
                     .offset(y: 100)
                     .zIndex(1000)
@@ -87,7 +87,7 @@ struct ContentView: View {
                 .scrollTargetBehavior(.viewAligned)
                 .scrollBounceBehavior(.basedOnSize)
                 .frame(width: 300)
-                .offset(y: 0)
+                .offset(y: -20)
 //            } else {
 //                TransparentBlurView(removeAllFilters: false)
 //                //ClearView()
