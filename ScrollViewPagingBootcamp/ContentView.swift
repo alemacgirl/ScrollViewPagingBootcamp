@@ -63,9 +63,9 @@ struct ContentView: View {
                     .border(Color.red)
                     .offset(y: 100)
                     .zIndex(1000)
-//                    .visualEffect { content, geometryProxy in
-//                        content.offset(y: 100)
-//                    }
+                    .visualEffect { content, geometryProxy in
+                        content.offset(y: 100)
+                    }
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(spacing: 10) {
                         ForEach (0..<10) { index in
