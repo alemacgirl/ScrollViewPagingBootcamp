@@ -11,6 +11,7 @@
 		A79B6BB42BBB3C2A00E728D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B6BB32BBB3C2A00E728D8 /* ContentView.swift */; };
 		A79B6BB62BBB3C2B00E728D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79B6BB52BBB3C2B00E728D8 /* Assets.xcassets */; };
 		A79B6BB92BBB3C2B00E728D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79B6BB82BBB3C2B00E728D8 /* Preview Assets.xcassets */; };
+		A7CDDE232BEBD355006674F2 /* SwiftUISnappingScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = A7CDDE222BEBD355006674F2 /* SwiftUISnappingScrollView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CDDE232BEBD355006674F2 /* SwiftUISnappingScrollView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,7 @@
 			);
 			name = ScrollViewPagingBootcamp;
 			packageProductDependencies = (
+				A7CDDE222BEBD355006674F2 /* SwiftUISnappingScrollView */,
 			);
 			productName = ScrollViewPagingBootcamp;
 			productReference = A79B6BAE2BBB3C2A00E728D8 /* ScrollViewPagingBootcamp.app */;
@@ -114,6 +117,7 @@
 			);
 			mainGroup = A79B6BA52BBB3C2A00E728D8;
 			packageReferences = (
+				A7CDDE212BEBD355006674F2 /* XCRemoteSwiftPackageReference "SwiftUISnappingScrollView" */,
 			);
 			productRefGroup = A79B6BAF2BBB3C2A00E728D8 /* Products */;
 			projectDirPath = "";
@@ -350,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A7CDDE212BEBD355006674F2 /* XCRemoteSwiftPackageReference "SwiftUISnappingScrollView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rewardStyle/SwiftUISnappingScrollView.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A7CDDE222BEBD355006674F2 /* SwiftUISnappingScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7CDDE212BEBD355006674F2 /* XCRemoteSwiftPackageReference "SwiftUISnappingScrollView" */;
+			productName = SwiftUISnappingScrollView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A79B6BA62BBB3C2A00E728D8 /* Project object */;
 }
