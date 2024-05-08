@@ -88,32 +88,32 @@ struct ContentView: View {
                 .scrollBounceBehavior(.basedOnSize)
                 .frame(width: 300)
                 .offset(y: -20)
-//            } else {
-//                TransparentBlurView(removeAllFilters: false)
-//                //ClearView()
-//                    .blur(radius: 10)
-//                    .frame(width: 400, height: 25)
-//                    .offset(y: 100)
-//                    .zIndex(1000)
-//                SnappingScrollView(.vertical, decelerationRate: .normal, showsIndicators: false) {
-//                    VStack(spacing: 10) {
-//                        ForEach (0..<10) { index in
-//                            AsyncImage(url: URL(string :"https://picsum.photos/300"))
-//                                .frame(width: 300, height: 300)
-//                                .overlay(
-//                                    Text ("\(index+1)" )
-//                                        .padding(8)
-//                                        .font(.title.bold())
-//                                        .foregroundColor(.yellow)
-//                                        .background(Color.black)
-//                                        .frame(maxWidth: .infinity)
-//                                    //.containerRelativeFrame(.horizontal, alignment: .center)
-//                                )
-//                        }
-//                    }
-//                }
-//                .offset(y: -100)
-//               .frame(width: 300)
+            } else {
+                TransparentBlurView(removeAllFilters: false)
+                //ClearView()
+                    //.blur(radius: 10)
+                    .frame(width: 340, height: 50)
+                    .offset(y: 100)
+                    .zIndex(1000)
+                SnappingScrollView(.vertical, decelerationRate: .normal, showsIndicators: false) {
+                    VStack(spacing: 10) {
+                        ForEach (0..<10) { index in
+                            AsyncImage(url: URL(string :"https://picsum.photos/300"))
+                                .frame(width: 300, height: 300)
+                                .overlay(
+                                    Text ("\(index+1)" )
+                                        .padding(8)
+                                        .font(.title.bold())
+                                        .foregroundColor(.yellow)
+                                        .background(Color.black)
+                                        .frame(maxWidth: .infinity)
+                                    //.containerRelativeFrame(.horizontal, alignment: .center)
+                                )
+                        }
+                    }
+                }
+                .offset(y: -100)
+               .frame(width: 300)
             }
         }
     }
