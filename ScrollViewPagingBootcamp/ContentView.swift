@@ -59,7 +59,7 @@ struct ContentView: View {
             if #available(iOS 17.0, *) {
                 TransparentBlurView(removeAllFilters: false)
                     //.blur(radius: 3)
-                    .frame(width: 340, height: 50)
+                    .frame(width: 360, height: 50)
                     .border(Color.red)
                     .offset(y: 100)
                     .zIndex(1000)
@@ -92,7 +92,7 @@ struct ContentView: View {
                 TransparentBlurView(removeAllFilters: false)
                 //ClearView()
                     //.blur(radius: 10)
-                    .frame(width: 340, height: 50)
+                    .frame(width: 360, height: 50)
                     .offset(y: 100)
                     .zIndex(1000)
                 SnappingScrollView(.vertical, decelerationRate: .normal, showsIndicators: false) {
